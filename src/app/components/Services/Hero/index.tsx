@@ -1,4 +1,4 @@
-import { IHeroContent } from "@/app/services/animation/page";
+import { IHeroContent } from "@/app/services/3d-video-animation-services/page";
 import React from "react";
 
 type HeroProps = {

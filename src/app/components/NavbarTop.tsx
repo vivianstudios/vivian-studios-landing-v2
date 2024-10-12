@@ -25,7 +25,7 @@ const NavbarTop: React.FC<NavbarTopProps> = () => {
         pathname.includes("services") ? "absolute z-40" : "bg-black z-10"
       } w-screen items-center top-0 `}
     >
-      <ScrollToTop color="black" smooth />
+      {/* <ScrollToTop color="black" smooth /> */}
       <div>
         <Image
           src={logo}
@@ -34,7 +34,7 @@ const NavbarTop: React.FC<NavbarTopProps> = () => {
         />
       </div>
       <div className="flex sm:w-[10vw] justify-evenly h-full items-center sm:mt-10 sm:mr-10">
-        <div className="font-Averta text-white mr-5">showreel</div>
+        <div className="font-Averta text-white mr-5"></div>
 
         {open ? (
           <Image

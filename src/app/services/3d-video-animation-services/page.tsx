@@ -1,5 +1,5 @@
 import React from "react";
-
+import type { Metadata } from "next";
 import { Suspense, useRef } from "react";
 import Hero from "../../components/Services/Hero";
 import Mission from "../../components/Services/Mission";
@@ -42,6 +42,7 @@ export type ISubServices = {
   mobileBackground: string;
   mobileBackgroundTwo?: string;
   buttonText?: string;
+  altTag?: string;
 };
 
 export type IClientLogos = {
@@ -123,6 +124,7 @@ const animationServices: ISubServices[] = [
     text: "At Vivian Studios, we excel in providing exceptional 3D modeling services tailored to diverse industries. Our dedicated team ensures rapid turnaround without compromising quality, empowering clients to achieve their creative visions with accuracy and flair.",
     background: ThreeDModel.src,
     mobileBackground: ThreeDModelMobile.src,
+    altTag: "3d Modelling Services",
   },
   {
     id: 2,
@@ -132,6 +134,7 @@ const animationServices: ISubServices[] = [
     backgroundTwo: RiggingAfter.src,
     mobileBackground: RiggingMobile.src,
     mobileBackgroundTwo: RiggingAfterMobile.src,
+    altTag: "3D Character Rigging Model",
   },
   {
     id: 3,
@@ -140,10 +143,17 @@ const animationServices: ISubServices[] = [
     background: "/services-3.mp4",
     type: "video",
     mobileBackground: "/mobile/animation.mp4",
+    altTag: "3d Video Animation",
   },
 ];
 
 const missionContent = `At our 3D animation agency, we infuse imagination with artistry, transforming concepts into breathtaking visuals that resonate with audiences. With passion and precision, we deliver exceptional animations that elevate storytelling across diverse industries.`;
+
+export const metadata: Metadata = {
+  title: "Animated video services | Vivian Studio",
+  description:
+    "Vivian studios offer effective, customized animated videos for your commercial campaigns that help showcase your products or services and convey brand messages to help you increase visibility.",
+};
 
 const page: React.FC<pageProps> = () => {
   return (

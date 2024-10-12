@@ -18,7 +18,7 @@ import packshotImageAfter from "@/app/assets/image-post-production/packshot-imag
 import Clients from "@/app/components/Services/Clients";
 import hero from "@/app/assets/image-post-production/image page first image.jpg";
 
-import { IClientLogos } from "../animation/page";
+import { IClientLogos } from "../3d-video-animation-services/page";
 
 import Bimba from "@/app/assets/Client-list/Bimba-y-lola-logo.png";
 import DnG from "@/app/assets/Client-list/D&G.png";
@@ -31,6 +31,7 @@ import Rayban from "@/app/assets/Client-list/Ray ban.png";
 import swarovksi from "@/app/assets/Client-list/swarovksi.png";
 import TomFord from "@/app/assets/Client-list/Tom Ford.png";
 import CallToAction from "@/app/components/CallToAction";
+import { Metadata } from "next";
 
 const ClientList: IClientLogos[] = [
   {
@@ -142,6 +143,7 @@ const page: React.FC<pageProps> = () => {
             <ReactCompareImage
               leftImage={colorChangeBefore.src}
               rightImage={colorChangeAfter.src}
+              leftImageAlt="Clipping path services"
             />
           </div>
         </div>
@@ -161,6 +163,7 @@ const page: React.FC<pageProps> = () => {
             <ReactCompareImage
               leftImage={colorChangeBefore.src}
               rightImage={colorChangeAfter.src}
+              leftImageAlt="Color correction service"
             />
           </div>
         </div>
@@ -171,6 +174,7 @@ const page: React.FC<pageProps> = () => {
             <ReactCompareImage
               leftImage={ghostManBefore.src}
               rightImage={ghostManAfter.src}
+              leftImageAlt="Neck joint service"
             />
           </div>
         </div>
@@ -192,6 +196,7 @@ const page: React.FC<pageProps> = () => {
             <ReactCompareImage
               leftImage={jewelryBefore.src}
               rightImage={jewelryAfter.src}
+              leftImageAlt="Neck joint service"
             />
           </div>
         </div>
@@ -216,6 +221,7 @@ const page: React.FC<pageProps> = () => {
             <ReactCompareImage
               leftImage={jewelryBefore.src}
               rightImage={jewelryAfter.src}
+              leftImageAlt="Neck joint service"
             />
           </div>
         </div>
@@ -226,6 +232,7 @@ const page: React.FC<pageProps> = () => {
             <ReactCompareImage
               leftImage={modelRetouchBefore.src}
               rightImage={modelRetouchAfter.src}
+              leftImageAlt=" model photo retouching"
             />
           </div>
         </div>
@@ -247,6 +254,7 @@ const page: React.FC<pageProps> = () => {
             <ReactCompareImage
               leftImage={packshotImageBefore.src}
               rightImage={packshotImageAfter.src}
+              leftImageAlt="model photo retouching"
             />
           </div>
         </div>
@@ -267,6 +275,7 @@ const page: React.FC<pageProps> = () => {
             <ReactCompareImage
               leftImage={packshotImageBefore.src}
               rightImage={packshotImageAfter.src}
+              leftImageAlt="model photo retouching"
             />
           </div>
         </div>

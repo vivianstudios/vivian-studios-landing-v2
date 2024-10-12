@@ -83,7 +83,7 @@ function Slider() {
                 key={index}
               >
                 <source
-                  src={`./video-and-motion-graphics${video.video}`}
+                  src={`./video-and-motion-graphics-design-services${video.video}`}
                   type="video/mp4"
                   className=""
                 />
@@ -125,7 +125,7 @@ function Slider() {
                   key={index}
                 >
                   <source
-                    src={`./video-and-motion-graphics${video.mobile}`}
+                    src={`./video-and-motion-graphics-design-services${video.mobile}`}
                     type="video/mp4"
                     className=""
                   />

@@ -27,8 +27,13 @@ https://jsfiddle.net/xcWge/14/
 
 ## Drafts -
 
-1. https://www.uchivfx.com/
-   movie slider in vfx page
+1.  https://www.uchivfx.com/
+    movie slider in vfx page
 
-   3. Animation page clients
-      https://www.mythstudio.co.uk/
+    3.  Animation page clients
+        https://www.mythstudio.co.uk/
+
+# git configs
+
+git config --global user.email "officialvivianstudios@gmail.com"
+git config --global user.name "vivianstudios"

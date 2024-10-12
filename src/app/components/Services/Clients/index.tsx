@@ -1,7 +1,7 @@
 import React from "react";
 
 import Image from "next/image";
-import { IClientLogos } from "@/app/services/animation/page";
+import { IClientLogos } from "@/app/services/3d-video-animation-services/page";
 
 type indexProps = {
   clientList: IClientLogos[];

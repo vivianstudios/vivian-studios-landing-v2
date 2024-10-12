@@ -2,12 +2,14 @@
 import React from "react";
 import ReactCompareImage from "react-compare-image";
 
-import { Suspense, useRef } from "react";
+import { Suspense } from "react";
 
 import before from "@/app/assets/video-editing/Before03.jpg";
 import after from "@/app/assets/video-editing/after1.jpg";
 import CallToAction from "@/app/components/CallToAction";
 import Slider from "@/app/components/Services/Slider";
+import { Metadata } from "next";
+import ClientComponent from "@/app/components/ClientComponent";
 
 type pageProps = {};
 
@@ -43,7 +45,11 @@ const Page: React.FC<pageProps> = () => {
         </div>
 
         <div className="flex justify-center w-full sm:w-[60vw] items-center bg-black">
-          <ReactCompareImage leftImage={before.src} rightImage={after.src} />
+          <ReactCompareImage
+            leftImage={before.src}
+            rightImage={after.src}
+            leftImageAlt="thumbnail design"
+          />
         </div>
 
         <div className="w-screen flex justify-center mt-[3vh] sm:mt-[10vh]">

@@ -3,13 +3,17 @@ import { Suspense, useRef } from "react";
 import Hero from "../../components/Services/Hero";
 import Mission from "../../components/Services/Mission";
 import SubServices from "../../components/Services/SubServices";
-import { IHeroContent, ISubServices } from "../animation/page";
+import {
+  IHeroContent,
+  ISubServices,
+} from "../3d-video-animation-services/page";
 
 import arFuniture from "@/app/assets/ar-vr/AR-Furniture.png";
 import arFunitureMobile from "@/app/assets/ar-vr/Mobile-size/Ar-Furniture.jpg";
 import arWatch from "@/app/assets/ar-vr/AR-Watch.jpg";
 import arWatchMobile from "@/app/assets/ar-vr/Mobile-size/Ar-Watch.jpg";
 import CallToAction from "@/app/components/CallToAction";
+import { Metadata } from "next";
 
 type pageProps = {};
 
@@ -27,6 +31,7 @@ const ARServices: ISubServices[] = [
     background: "/ar-shoe.mp4",
     type: "video",
     mobileBackground: "/mobile/Ar-Shoe.mp4",
+    altTag: "AR shoes",
   },
   {
     id: 1,
@@ -34,6 +39,7 @@ const ARServices: ISubServices[] = [
     text: "",
     background: arFuniture.src,
     mobileBackground: arFunitureMobile.src,
+    altTag: "augmented reality furniture",
   },
   {
     id: 3,
@@ -41,6 +47,7 @@ const ARServices: ISubServices[] = [
     text: "",
     background: arWatch.src,
     mobileBackground: arWatchMobile.src,
+    altTag: "augmented reality watch",
   },
 ];
 
@@ -52,6 +59,7 @@ const VRServices: ISubServices[] = [
     background: "/VR-Gaming.mp4",
     type: "video",
     mobileBackground: "/mobile/Vr-games.mp4",
+    altTag: "VR development",
   },
   {
     id: 2,
@@ -65,6 +73,12 @@ const VRServices: ISubServices[] = [
 
 const vrContent = `Maximize the effectiveness of your VR endeavors with our tailored VR app services designed for various sectors, including healthcare, SaaS and more. We deliver cutting-edge solutions, including immersive audio and seamless transitions, positioning your brand at the forefront of innovation.`;
 const arContent = `Transform your Augmented Reality initiatives with our exceptional services tailored for healthcare, SaaS, tour applications, and 3D modeling. Our dedicated team enhances visual fidelity and integrates interactive elements, ensuring your augmented reality projects surpass industry benchmarks and deeply engage users.`;
+
+export const metadata: Metadata = {
+  title: "Augmented Reality Services | Vivian Studios",
+  description:
+    "We are a renowned AR & VR app development company that merges its deep technical knowledge with creativity to deliver highly-immersive applications. Boasting extensive AR-VR expertise.",
+};
 
 const page: React.FC<pageProps> = () => {
   return (

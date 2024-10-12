@@ -10,7 +10,7 @@ type FooterProps = {};
 const Footer: React.FC<FooterProps> = () => {
   return (
     <>
-      <ScrollToTop smooth component={<p style={{ color: "white" }}>UP</p>} />
+      {/* <ScrollToTop smooth component={<p style={{ color: "white" }}>UP</p>} /> */}
       <div className="w-[100vw] sm:h-screen bg-black text-white flex flex-col items-center justify-between z-30 ">
         <div className="flex justify-between items-center w-[90%]">
           <div className="font-averta text-3xl sm:text-5xl mt-[5vh] mb-[5vh] ml-[2vw] mr-[2vw]">

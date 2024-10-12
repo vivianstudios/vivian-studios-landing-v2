@@ -11,6 +11,7 @@ import useProjectBreakpoints from "../hooks/breakpoints";
 import useActiveProject from "../hooks/activeProject";
 import { portfolioList } from "../utils/portfolioList";
 import { InView } from "react-intersection-observer";
+import Image from "next/image";
 
 const ProjectCard: React.FC<ProjectCardProps> = () => {
   const { logoRevealDistance }: any = useLogoRevealDistance();
@@ -88,6 +89,15 @@ const ProjectCard: React.FC<ProjectCardProps> = () => {
             >
               {portfolio.projectName}
             </p>
+            <Image
+              src={portfolio.thumbnail}
+              alt="portfolio"
+              height={300}
+              width={300}
+              className={`transition duration-1000 ${
+                portfolio.id === activeProject ? "opacity-0" : "opacity-100"
+              } absolute w-[20vw]`}
+            ></Image>
             <video
               className="w-[20vw] text-black"
               ref={(ref) => {
@@ -98,9 +108,6 @@ const ProjectCard: React.FC<ProjectCardProps> = () => {
               // autoPlay={portfolio.id === activeProject ? true : false}
               autoPlay
               poster={portfolio.thumbnail}
-              // onCanPlayThrough={() => {
-              //   console.log("can play through");
-              // }}
             >
               <source src={portfolio.video} type="video/mp4" className="" />
             </video>

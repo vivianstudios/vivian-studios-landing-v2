@@ -52,25 +52,34 @@ const CollapsibleMenu: React.FC<CollapsibleMenuProps> = () => {
 
                 <div className="flex flex-col font-averta ml-3 sm:ml-0">
                   <p className="text-3xl sm:text-5xl mb-[1vh]">What we do</p>
-                  <a className="text-2xl mb-[1vh] " href="/services/animation">
+                  <a
+                    className="text-2xl mb-[1vh] "
+                    href="/services/3d-video-animation-services"
+                  >
                     Animation
                   </a>
-                  <a className="text-2xl mb-[1vh]" href="/services/vfx">
+                  <a
+                    className="text-2xl mb-[1vh]"
+                    href="/services/special-effects-services"
+                  >
                     VFX
                   </a>
-                  <a className="text-2xl mb-[1vh]" href="/services/ar-vr">
+                  <a
+                    className="text-2xl mb-[1vh]"
+                    href="/services/ar-vr-app-development"
+                  >
                     AR/VR
                   </a>
                   <a
                     className="text-2xl mb-[1vh]"
-                    href="/services/video-and-motion-graphics"
+                    href="/services/video-and-motion-graphics-design-services"
                   >
                     Video Editing <br />
                     and Motion graphics
                   </a>
                   <a
                     className="text-2xl"
-                    href="/services/image-post-production"
+                    href="/services/image-post-production-services"
                   >
                     Image Post production
                   </a>
