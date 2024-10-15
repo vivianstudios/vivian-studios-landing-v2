@@ -17,7 +17,7 @@ https://sussextaps.com.au/
 2. Navbar Top - Burger to cross animation
 3. Hero Banner - On reveal font transition
 4. Blog section
-5. Fade in and out in Subservices
+5. Fade in and out in Subservices.
 6. 1hour delay in login time.
 
 ## Resources -
