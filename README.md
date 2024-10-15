@@ -18,7 +18,7 @@ https://sussextaps.com.au/
 3. Hero Banner - On reveal font transition
 4. Blog section
 5. Fade in and out in Subservices
-6. 1hour delay in login time
+6. 1hour delay in login time.
 
 ## Resources -
 
@@ -36,3 +36,6 @@ https://jsfiddle.net/xcWge/14/
 
 git config --global user.email "officialvivianstudios@gmail.com"
 git config --global user.name "vivianstudios"
+
+git config --global user.email "noel.alam9999@gmail.com"
+git config --global user.name "noelalam9999"
