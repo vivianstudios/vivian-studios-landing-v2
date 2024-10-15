@@ -31,7 +31,6 @@ const CallToAction: React.FC<CallToActionProps> = () => {
       width: window.screen.width,
       height: window.screen.height,
     });
-    console.log("rendered");
     return () => {};
   }, []);
 
@@ -44,8 +43,6 @@ const CallToAction: React.FC<CallToActionProps> = () => {
       }
     };
   }, []);
-
-  // console.log(viewDimension);
 
   useEffect(() => {
     setTimeout(() => {

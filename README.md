@@ -18,8 +18,7 @@ https://sussextaps.com.au/
 3. Hero Banner - On reveal font transition
 4. Blog section
 5. Fade in and out in Subservices
-6. Cards should play when they appear at the center
-7. 1hour delay in login time
+6. 1hour delay in login time
 
 ## Resources -
 

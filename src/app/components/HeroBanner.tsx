@@ -19,7 +19,7 @@ const HeroBanner = React.forwardRef<HTMLDivElement | null, Props>(
         className="flex max-w-screen items-center h-[90vh] justify-center flex-col bg-black  z-0"
       >
         <div className="hidden sm:grid sm:grid-cols-2 w-[70vw]">
-          <div className="transition ease-in-out delay-650 flex text-[7.25vw] font-averta items-center text-white leading-12">
+          <div className="transition ease-in-out delay-650 flex text-[7.25vw] font-averta items-center text-white leading-12 animate-slidein opacity-0">
             <p></p>
             SHAPE
             <div className="flex item rounded-[320px] w-[12vw] h-fit overflow-hidden justify-center">
@@ -29,17 +29,17 @@ const HeroBanner = React.forwardRef<HTMLDivElement | null, Props>(
             </div>
           </div>
 
-          <div className="flex text-[1.2vw] font-averta text-white justify-content m-2 items-center leading-12">
+          <div className="flex text-[1.2vw] font-averta text-white justify-content m-2 items-center leading-12 animate-slidein opacity-0">
             <p>
               We transform businesses into unforgettable brands. As a TPN
               certified post production agency, we are dedicated to helping you
               stand out in the digital landscape.
             </p>
           </div>
-          <div className="text-[7vw] font-averta text-white leading-9">
+          <div className="text-[7vw] font-averta text-white leading-9 animate-slidein opacity-0">
             CINEMATIC
           </div>
-          <div className="flex justify-end text-[7vw] font-averta text-slate-500 leading-9">
+          <div className="flex justify-end text-[7vw] font-averta text-slate-500 leading-9 animate-slidein opacity-0">
             <p>DREAMS</p>
           </div>
         </div>
@@ -50,16 +50,16 @@ const HeroBanner = React.forwardRef<HTMLDivElement | null, Props>(
                 <source src="./reel.mp4" type="video/mp4" className="" />
               </video>
             </div>
-            <p>SHAPE</p>
+            <p className="animate-slidein opacity-0">SHAPE</p>
           </div>
           <div className=" font-averta text-white justify-content items-center leading-12">
-            <div className="text-[3rem] font-averta text-white leading-9">
+            <div className="text-[3rem] font-averta text-white leading-9 animate-slidein opacity-0">
               CINEMATIC
             </div>
             <div className=" text-[3rem] font-averta text-slate-500 leading-12">
-              <p>DREAMS</p>
+              <p className="animate-slidein opacity-0">DREAMS</p>
             </div>
-            <p>
+            <p className="animate-slidein opacity-0">
               We turn Business into Brands. We craft custom tailored websites
               and mobile apps that help you tell your story the right way.
               Awards winning digital agency based in India.

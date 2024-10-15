@@ -62,8 +62,6 @@ const LogoReveal: React.FC<LogoRevealProps> = ({ children }) => {
     });
   }, [scrollPosition.top]);
 
-  // console.log(activeImage);
-
   useEffect(() => {
     if (
       logoRevealSection.current?.getBoundingClientRect().top === 0 &&

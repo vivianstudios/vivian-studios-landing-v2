@@ -12,10 +12,5 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <>
-      {children}
-      {/* <Script src="https://olivier3lanc.github.io/Scroll-Frames/js/scroll-frames.js"></Script> */}
-    </>
-  );
+  return <>{children}</>;
 }

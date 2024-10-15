@@ -56,8 +56,6 @@ const ProjectCard: React.FC<ProjectCardProps> = () => {
     }
   }, [projectsDistance, logoRevealDistance]);
 
-  // console.log(breakpoints);
-
   useEffect(() => {
     videoRef[activeProject]?.play();
     videoRef[activeProject - 1]?.pause();

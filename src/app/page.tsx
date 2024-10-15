@@ -44,7 +44,6 @@ export default function Home() {
   const handleLoading = () => {
     setIsLoading(false);
   };
-  console.log(isLoading);
 
   useEffect(() => {
     window.addEventListener("load", handleLoading);

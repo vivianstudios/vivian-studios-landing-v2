@@ -14,7 +14,6 @@ type SubServicesProps = {
 };
 
 const SubServices: React.FC<SubServicesProps> = ({ subServices }) => {
-  // console.log(subServices[2].background);
   const [currentURL, setCurrentURL] = useState("");
   const [hovered, setHover] = useState(false);
   useEffect(() => {
@@ -22,7 +21,6 @@ const SubServices: React.FC<SubServicesProps> = ({ subServices }) => {
   }, []);
 
   function handleBackgroundHover(status: boolean) {
-    console.log(status);
     if (status) {
       setHover(true);
     } else {

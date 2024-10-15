@@ -32,7 +32,6 @@ export default function RootLayout({
 
         <Footer></Footer>
       </body>
-      {/* <Script src="https://olivier3lanc.github.io/Scroll-Frames/js/scroll-frames.js"></Script> */}
     </html>
   );
 }
