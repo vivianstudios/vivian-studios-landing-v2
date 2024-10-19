@@ -31,7 +31,7 @@ export default function RootLayout({
           crossOrigin=""
         />
       </Head>
-      <body className={`${inter.className} overflow-x-hidden relative `}>
+      <body className={`${inter.className} overflow-x-hidden relative`}>
         {/* <Head>
           <Image src={favicon} alt="" />
         </Head> */}

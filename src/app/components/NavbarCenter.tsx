@@ -9,23 +9,23 @@ interface menuItem {
 }
 const menuItems: menuItem[] = [
   {
-    name: "animation",
+    name: "3d-video-animation-services",
     label: "Animation",
   },
   {
-    name: "vfx",
+    name: "special-effects-services",
     label: "VFX",
   },
   {
-    name: "ar-vr",
+    name: "ar-vr-app-development",
     label: "AR/VR",
   },
   {
-    name: "video-and-motion-graphics",
+    name: "video-and-motion-graphics-design-services",
     label: "Video Editing",
   },
   {
-    name: "image-post-production",
+    name: "image-post-production-services",
     label: "Image Post Production",
   },
 ];
