@@ -115,7 +115,7 @@ const SubServices: React.FC<SubServicesProps> = ({ subServices }) => {
                           }`}
                         />
                         <img
-                          className="w-full "
+                          className="w-full"
                           src={subService.background}
                           alt={subService.altTag}
                         />
@@ -148,6 +148,25 @@ const SubServices: React.FC<SubServicesProps> = ({ subServices }) => {
                     onMouseLeave={() => handleBackgroundHover(false)}
                     className="h-screen aspect-[1/2] sm:aspect-[2/1] block sm:hidden"
                   >
+                    {" "}
+                    <ParallaxBannerLayer speed={-20}>
+                      <div className="relative">
+                        <img
+                          src={subService.mobileBackground}
+                          alt={subService.altTag}
+                          className={`absolute transition duration-1000  w-full ${
+                            hovered && subService.mobileBackground
+                              ? "opacity-100"
+                              : "opacity-0"
+                          }`}
+                        />
+                        <img
+                          className="w-full"
+                          src={subService.mobileBackgroundTwo}
+                          alt={subService.altTag}
+                        />
+                      </div>
+                    </ParallaxBannerLayer>
                     <div
                       className={`absolute h-screen w-[80vw] sm:w-[30vw] flex-col items-start flex justify-center ml-[10vw] ${
                         index % 2 === 0 ? "sm:ml-[10vw]" : "sm:ml-[60vw]"
