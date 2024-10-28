@@ -1,6 +1,7 @@
 import React from "react";
 import Rigging from "@/app/assets/animation/Rigging.jpg";
 import Image from "next/image";
+import { format } from "date-fns-tz";
 
 type SingleBlogProps = {
   params: { blogid: string };
@@ -35,7 +36,11 @@ const SingleBlog: React.FC<SingleBlogProps> = async ({
       <div className=" border-b-[1px] border-white border-solid pb-7 text-center">
         <h1 className="text-4xl font-bold pb-2">{blog.title}</h1>
 
-        <p className="text-md">{blog.createdOn}</p>
+        <p className="text-md">
+          {format(new Date(blog.createdOn), "MMMM dd, yyyy h:mm a zzz", {
+            timeZone: "America/New_York",
+          })}
+        </p>
       </div>
       <Image
         width={800}
@@ -49,9 +54,6 @@ const SingleBlog: React.FC<SingleBlogProps> = async ({
           __html: blog.blog,
         }}
       ></div>
-      {/* <div className="mt-7">
-        <p>{blog.blog}</p>
-      </div> */}
     </div>
   );
 };
