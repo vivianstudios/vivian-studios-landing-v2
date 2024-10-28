@@ -24,17 +24,19 @@ type BlogsProps = object;
 //   },
 // ];
 
-const MAX_DISPLAY = 3;
 const Page: React.FC<BlogsProps> = async () => {
-  let data = await fetch("https://vivian.fly.dev/api/blogs");
+  let data = await fetch("https://vivian.fly.dev/api/blogs", {
+    next: { revalidate: 3600 },
+  });
   let posts = await data.json();
+
   // const posts = await res.json();
   return (
     <>
       <div className="border-b-[1px] border-solid border-white">
         <h1 className="text-6xl sm:text-8xl font-bold mt-4">Latest</h1>
         <h2 className="text-2xl mt-4 mb-4">
-          A blog created with Next.js and Tailwind.css
+          A blog on all things film production
         </h2>
       </div>
       <div className="mt-4 mb-4">
