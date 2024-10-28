@@ -2,9 +2,7 @@ import React from "react";
 import BlogCard, { BlogCardProps } from "../components/BlogCard";
 import Rigging from "@/app/assets/animation/Rigging.jpg";
 import { getBlogs } from "@/services/blogs";
-type BlogsProps = {
-  posts: BlogCardProps[];
-};
+type BlogsProps = object;
 
 // const posts = [
 //   {
