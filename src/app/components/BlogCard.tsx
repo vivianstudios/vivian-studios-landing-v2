@@ -20,7 +20,9 @@ const BlogCard: React.FC<BlogCardProps> = ({
   return (
     <div className="flex sm:flex-row flex-col border-b-[1px] border-solid border-white pb-10 mt-10 items-center">
       <div className="sm:w-[15vw] w-full">
-        <img src={image} alt={title} className="w-full"></img>
+        <Link href={`./blog/${id}`}>
+          <img src={image} alt={title} className="w-full"></img>
+        </Link>
       </div>
       <div className="sm:w-[45vw] w-full pl-4 flex flex-col justify-stretch relative mt-4">
         <h3 className="font-bold text-2xl">{title}</h3>
