@@ -148,7 +148,7 @@ const SubServices: React.FC<SubServicesProps> = ({ subServices }) => {
                   <ParallaxBanner
                     onMouseEnter={() => handleBackgroundHover(true)}
                     onMouseLeave={() => handleBackgroundHover(false)}
-                    className="h-screen aspect-[1/2] sm:aspect-[2/1] block sm:hidden"
+                    className="h-fit aspect-[1/2] sm:aspect-[2/1] block sm:hidden"
                   >
                     {" "}
                     <ParallaxBannerLayer speed={0}>
@@ -156,7 +156,7 @@ const SubServices: React.FC<SubServicesProps> = ({ subServices }) => {
                         <img
                           src={subService.mobileBackgroundTwo}
                           alt={subService.altTag}
-                          className={`absolute transition duration-1000 w-full ${
+                          className={`absolute transition duration-1000 h-screen w-auto ${
                             subService.mobileBackgroundTwo
                               ? "opacity-100"
                               : "opacity-0"
