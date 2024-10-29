@@ -157,14 +157,14 @@ const SubServices: React.FC<SubServicesProps> = ({ subServices }) => {
                           src={subService.mobileBackground}
                           alt={subService.altTag}
                           className={`absolute transition duration-1000  w-full ${
-                            hovered && subService.mobileBackground
+                            hovered && subService.mobileBackgroundTwo
                               ? "opacity-100"
                               : "opacity-0"
                           }`}
                         />
                         <img
                           className="w-full"
-                          src={subService.mobileBackgroundTwo}
+                          src={subService.mobileBackground}
                           alt={subService.altTag}
                         />
                       </div>
