@@ -154,10 +154,10 @@ const SubServices: React.FC<SubServicesProps> = ({ subServices }) => {
                     <ParallaxBannerLayer speed={0}>
                       <div className="relative">
                         <img
-                          src={subService.mobileBackground}
+                          src={subService.mobileBackgroundTwo}
                           alt={subService.altTag}
-                          className={`absolute transition duration-1000  w-full ${
-                            hovered && subService.mobileBackgroundTwo
+                          className={`absolute transition duration-1000 w-full ${
+                            subService.mobileBackgroundTwo
                               ? "opacity-100"
                               : "opacity-0"
                           }`}
