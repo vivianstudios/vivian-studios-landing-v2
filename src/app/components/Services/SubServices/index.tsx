@@ -103,7 +103,9 @@ const SubServices: React.FC<SubServicesProps> = ({ subServices }) => {
                     onMouseLeave={() => handleBackgroundHover(false)}
                     className="h-screen aspect-[1/2] sm:aspect-[2/1] sm:block hidden items-center"
                   >
-                    <ParallaxBannerLayer speed={-20}>
+                    <ParallaxBannerLayer
+                      speed={subService.backgroundTwo ? 0 : -20}
+                    >
                       <div className="relative">
                         <img
                           src={subService.backgroundTwo}
@@ -149,7 +151,7 @@ const SubServices: React.FC<SubServicesProps> = ({ subServices }) => {
                     className="h-screen aspect-[1/2] sm:aspect-[2/1] block sm:hidden"
                   >
                     {" "}
-                    <ParallaxBannerLayer speed={-20}>
+                    <ParallaxBannerLayer speed={0}>
                       <div className="relative">
                         <img
                           src={subService.mobileBackground}
