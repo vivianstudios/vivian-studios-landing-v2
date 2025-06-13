@@ -19,8 +19,8 @@ type pageProps = {};
 
 const heroBannerContent: IHeroContent = {
   title: "AR/VR",
-  video: "./ar-vr/landing-video.mp4",
-  mobileVideo: "./ar-vr/mobile/Landing-Video.mp4",
+  video: "./ar-vr-app-development/landing-video.mp4",
+  mobileVideo: "./ar-vr-app-development/mobile/Landing-Video.mp4",
 };
 
 const ARServices: ISubServices[] = [

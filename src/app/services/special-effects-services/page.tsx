@@ -26,8 +26,8 @@ type pageProps = {};
 
 const heroBannerContent: IHeroContent = {
   title: "VFX",
-  video: "./vfx/hero.mp4",
-  mobileVideo: "./vfx/mobile/hero.mp4",
+  video: "./special-effects-services/hero.mp4",
+  mobileVideo: "./special-effects-services/mobile/hero.mp4",
 };
 
 const vfxServices: ISubServices[] = [
@@ -90,7 +90,7 @@ const Page: React.FC<pageProps> = () => {
       <Suspense fallback={<>Loading...</>}>
         <FeaturedProject
           title="Notable VFX Projects"
-          video="./vfx/featured.mp4"
+          video="./special-effects-services/featured.mp4"
         ></FeaturedProject>
       </Suspense>
       <Suspense fallback={<>Loading...</>}>

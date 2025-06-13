@@ -107,14 +107,14 @@ const ClientList: IClientLogos[] = [
 
 const heroContent: IHeroContent = {
   title: "Animation",
-  video: "./animation/hero-video.mp4",
-  mobileVideo: "./animation/mobile/hero.mp4",
+  video: "./3d-video-animation-services/hero-video.mp4",
+  mobileVideo: "./3d-video-animation-services/mobile/hero.mp4",
 };
 
 const featuredProjectContent: IFeaturedProject = {
   title: "Steps taken for Projects",
-  video: "./animation/featured-project.mp4",
-  mobileVideo: "./animation/featured-project.mp4",
+  video: "./3d-video-animation-services/featured-project.mp4",
+  mobileVideo: "./3d-video-animation-services/featured-project.mp4",
 };
 
 const animationServices: ISubServices[] = [
@@ -168,7 +168,7 @@ const page: React.FC<pageProps> = () => {
       <Suspense fallback={<>Loading...</>}>
         <FeaturedProject
           title="Steps taken for Projects"
-          video="./animation/featured-project.mp4"
+          video="./3d-video-animation-services/featured-project.mp4"
         ></FeaturedProject>
       </Suspense>
       <Suspense fallback={<>Loading...</>}>

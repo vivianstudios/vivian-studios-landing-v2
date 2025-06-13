@@ -22,7 +22,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} overflow-x-hidden relative `}>
+      <Head>
+        <link
+          rel="preload"
+          href="/fonts/Montserrat-Thin.ttf"
+          as="font"
+          type="font/woff2"
+          crossOrigin=""
+        />
+      </Head>
+      <body className={`${inter.className} overflow-x-hidden relative`}>
         {/* <Head>
           <Image src={favicon} alt="" />
         </Head> */}
