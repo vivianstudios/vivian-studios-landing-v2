@@ -26,6 +26,14 @@ export default function RootLayout({
         {/* <Head>
           <Image src={favicon} alt="" />
         </Head> */}
+        <Head>
+          <title>Vivian Studios</title>
+          <meta
+            name="description"
+            content="Vivian Studios is a TPN-certified post-production agency delivering expert VFX, animation, image retouching, and video content for brands around the world."
+            key="desc"
+          />
+        </Head>
         <NavbarTop />
         <CollapsibleMenu />
         {children}
