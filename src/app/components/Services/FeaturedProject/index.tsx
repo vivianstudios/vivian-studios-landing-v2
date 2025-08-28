@@ -21,13 +21,15 @@ const FeaturedProject: React.FC<FeaturedProjectProps> = ({ title, video }) => {
   }
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    setViewWidth(window.screen.width);
-    return () => {
-      if (videoRef.current) {
-        window.removeEventListener("scroll", handleScroll, true);
-      }
-    };
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", handleScroll);
+      setViewWidth(window.screen.width);
+      return () => {
+        if (videoRef.current) {
+          window.removeEventListener("scroll", handleScroll, true);
+        }
+      };
+    }
   }, []);
 
   return (

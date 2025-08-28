@@ -16,7 +16,9 @@ const SubServices: React.FC<SubServicesProps> = ({ subServices }) => {
   const [currentURL, setCurrentURL] = useState("");
   const [hovered, setHover] = useState(false);
   useEffect(() => {
-    setCurrentURL(window.location.href);
+    if (typeof window !== "undefined") {
+      setCurrentURL(window.location.href);
+    }
   }, []);
 
   function handleBackgroundHover(status: boolean) {

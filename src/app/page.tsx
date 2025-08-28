@@ -46,8 +46,10 @@ export default function Home() {
   };
 
   useEffect(() => {
-    window.addEventListener("load", handleLoading);
-    return () => window.removeEventListener("load", handleLoading);
+    if (typeof window !== "undefined") {
+      window.addEventListener("load", handleLoading);
+      return () => window.removeEventListener("load", handleLoading);
+    }
   }, []);
 
   return (

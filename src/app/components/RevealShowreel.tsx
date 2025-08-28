@@ -40,12 +40,14 @@ const RevealShowreel: React.FC<RevealShowreelProps> = () => {
   }
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      if (ref.current) {
-        window.removeEventListener("scroll", handleScroll, true);
-      }
-    };
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        if (ref.current) {
+          window.removeEventListener("scroll", handleScroll, true);
+        }
+      };
+    }
   }, []);
 
   return (

@@ -34,13 +34,15 @@ const OtherProjects: React.FC<OtherProjectsProps> = () => {
   }
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    setScreenHeight(window.screen.height);
-    return () => {
-      if (imagesRef.current && thumbRef.current) {
-        window.removeEventListener("scroll", handleScroll, true);
-      }
-    };
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", handleScroll);
+      setScreenHeight(window.screen.height);
+      return () => {
+        if (imagesRef.current && thumbRef.current) {
+          window.removeEventListener("scroll", handleScroll, true);
+        }
+      };
+    }
   }, []);
   return (
     <>

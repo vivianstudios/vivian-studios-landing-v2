@@ -82,15 +82,17 @@ const LogoReveal: React.FC<LogoRevealProps> = ({ children }) => {
   }, [finalFrameRef.current?.getBoundingClientRect().top]);
 
   useEffect(() => {
-    setCurrentURL(window.location.href);
-    window.addEventListener("scroll", handleScroll);
+    if (typeof window !== "undefined") {
+      setCurrentURL(window.location.href);
+      window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      setScrollSpeed(scrollPosition.top);
-      if (ref.current) {
-        window.removeEventListener("scroll", handleScroll, true);
-      }
-    };
+      return () => {
+        setScrollSpeed(scrollPosition.top);
+        if (ref.current) {
+          window.removeEventListener("scroll", handleScroll, true);
+        }
+      };
+    }
   }, []);
 
   //This useEffect is used to set the buffer height based on the Project List Container Width

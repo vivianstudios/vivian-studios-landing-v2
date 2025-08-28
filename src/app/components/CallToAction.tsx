@@ -27,21 +27,25 @@ const CallToAction: React.FC<CallToActionProps> = () => {
   }
 
   useEffect(() => {
-    setViewDimension({
-      width: window.screen.width,
-      height: window.screen.height,
-    });
+    if (typeof window !== "undefined") {
+      setViewDimension({
+        width: window.screen.width,
+        height: window.screen.height,
+      });
+    }
     return () => {};
   }, []);
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      if (ref.current) {
-        window.removeEventListener("scroll", handleScroll, true);
-      }
-    };
+      return () => {
+        if (ref.current) {
+          window.removeEventListener("scroll", handleScroll, true);
+        }
+      };
+    }
   }, []);
 
   useEffect(() => {

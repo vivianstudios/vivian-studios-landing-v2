@@ -20,13 +20,15 @@ const Team: React.FC<TeamProps> = () => {
   }
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      if (cardRef.current) {
-        window.removeEventListener("scroll", handleScroll, true);
-      }
-    };
+      return () => {
+        if (cardRef.current) {
+          window.removeEventListener("scroll", handleScroll, true);
+        }
+      };
+    }
   }, []);
 
   return (
