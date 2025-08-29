@@ -26,11 +26,12 @@ const CallToAction = dynamic(() => import("./components/CallToAction"), {
 });
 // import CallToAction from "./components/CallToAction";
 
-import { Suspense, useEffect, useRef, useState } from "react";
+import { Suspense, useState } from "react";
 
 import ErrorBoundary from "./error";
 import NonStickyProjectList from "./components/NonStickyProjectList";
 import Message, { IMessageProps } from "./components/About/Message";
+import InitialLoader from "./components/InitialLoader";
 
 const aboutUsContent: IMessageProps = {
   title: "About Us",
@@ -39,21 +40,15 @@ const aboutUsContent: IMessageProps = {
   alignment: "left",
 };
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [showInitialLoader, setShowInitialLoader] = useState(true);
 
-  const handleLoading = () => {
-    setIsLoading(false);
+  const handleLoaderComplete = () => {
+    setShowInitialLoader(false);
   };
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.addEventListener("load", handleLoading);
-      return () => window.removeEventListener("load", handleLoading);
-    }
-  }, []);
 
   return (
     <>
+      {showInitialLoader && <InitialLoader onComplete={handleLoaderComplete} />}
       <ErrorBoundary>
         <>
           <HeroBanner>
