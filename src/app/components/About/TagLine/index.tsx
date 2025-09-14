@@ -33,7 +33,7 @@ const TagLine: React.FC<TagLineProps> = () => {
             life, ensuring creativity and quality at every step.
 
              <br />   <br />Co-founder - Fatema Tuz Zohora 
-            email- fatema.tuz.zohora.oishi@gmail.com  
+            <br /> email- fatema.tuz.zohora.oishi@gmail.com  
           </p>
         </div>
       </div>
