@@ -31,6 +31,9 @@ const TagLine: React.FC<TagLineProps> = () => {
             commitment to delivering exceptional results. With a team of some of
             the best artists in-house, we stand ready to bring your projects to
             life, ensuring creativity and quality at every step.
+
+            Co-founder - Fatema Tuz Zohora 
+            email- fatema.tuz.zohora.oishi@gmail.com
           </p>
         </div>
       </div>
